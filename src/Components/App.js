@@ -5,10 +5,21 @@ import '../App.css';
 import Contacts from './Contacts';
 
 class App extends Component {
+  state = {
+    contacts: [{
+      name : 'Mehmet',
+      phone : '12332323415'
+    },{
+      name : 'Ahmed',
+      phone : '93254516671'
+    }]
+
+  };
+
   render() {
     return(
       <div className="App">
-        <Contacts/>
+        <Contacts contacts={this.props.contacts}/>
       </div>
     );
   }
