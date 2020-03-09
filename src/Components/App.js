@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        <Contacts contacts={this.props.contacts}/>
+        <Contacts contacts={this.state.contacts}/>
       </div>
     );
   }

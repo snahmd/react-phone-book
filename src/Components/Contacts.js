@@ -8,7 +8,7 @@ class Contacts extends Component {
   render() {
     return (
       <div>
-        <List contacts={this.state.contacts}/>
+        <List contacts={this.props.contacts}/>
         <Form/>
       </div>
     );
